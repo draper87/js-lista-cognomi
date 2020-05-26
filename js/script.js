@@ -18,7 +18,7 @@ var arrayCognomiOrdinati = arrayCognomi.sort();
 var lista = document.getElementById('lista');
 var posizione = document.getElementById('posizione');
 
-// Stampo i cognomi in ordine alfabetico
+// Stampo i cognomi in ordine alfabetico e indico la posizione del cognome nella lista
 for (var i = 0; i < arrayCognomiOrdinati.length; i++) {
   var listaDiAppoggio = lista.innerHTML;
   lista.innerHTML = listaDiAppoggio + '<li>' + arrayCognomiOrdinati[i] + '</li>';
