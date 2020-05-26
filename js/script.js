@@ -22,11 +22,5 @@ var posizione = document.getElementById('posizione');
 for (var i = 0; i < arrayCognomiOrdinati.length; i++) {
   var listaDiAppoggio = lista.innerHTML;
   lista.innerHTML = listaDiAppoggio + '<li>' + arrayCognomiOrdinati[i] + '</li>';
-}
-
-// Stampo la posizione del cognomeUtente all interno della lista
-for (var i = 0; i < arrayCognomiOrdinati.length; i++) {
-  if (arrayCognomiOrdinati[i] == cognomeUtente) {
-    posizione.innerHTML = 'Il tuo cognome è il numero ' + (i + 1) + ' nella lista';
-  }
+  posizione.innerHTML = 'Il tuo cognome è il numero ' + (arrayCognomiOrdinati.indexOf(cognomeUtente) +1) + ' della lista';
 }
